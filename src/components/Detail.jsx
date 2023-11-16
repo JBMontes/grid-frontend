@@ -38,6 +38,7 @@ export default function Detail() {
             </div>
             <div className="buttons">
                 <button onClick={handleDelete}>Delete</button>
+               <Link to='/grid'> <button>↩︎</button></Link>
             </div>
 
 

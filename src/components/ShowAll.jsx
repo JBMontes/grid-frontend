@@ -28,7 +28,7 @@ useEffect(() => {
 
             <div className="list">
 
-        { list.map((task)=> 
+        { list.sort((a,b)=> a.priority - b.priority).map((task)=> 
 
             <TaskCard key={task.id} task={task}/>
         
