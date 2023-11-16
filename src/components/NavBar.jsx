@@ -8,7 +8,7 @@ return(
 
    <Link to='/'><h1> The Grid</h1></Link> 
 
-<button>New Task 📝</button>
+<Link to='/grid/new'><button>New Task 📝</button></Link>
 
  </div>
 )
