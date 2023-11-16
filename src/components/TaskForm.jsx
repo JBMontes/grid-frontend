@@ -1,6 +1,6 @@
 import { useState } from "react";
 import { useNavigate, Link } from "react-router-dom";
-
+import '../styles/TaskForm.css'
 const API = import.meta.env.VITE_API_URL;
 
 export default function TaskForm(){
@@ -19,14 +19,6 @@ export default function TaskForm(){
     })
 
     const addList = () => {
-        // const ListData = {
-        //     title: list.title,
-        //     priority:list.priority,
-        //     description:list.description,
-        //     deadline:list.deadline,
-        //     completed: list.completed,
-        //     category: list.category
-        // }
 
         fetch(`${API}/grid`, {
             method: "POST",
@@ -102,14 +94,6 @@ export default function TaskForm(){
                         required
                     />
 
-                    <label htmlFor="completed">Completed:</label>
-                    <input
-                        id="completed"
-                        type="checkbox"
-                        onChange={handleCheckboxChange}
-                        checked={list.completed }
-                    />
-
                     <label htmlFor="category">Category:</label>
                     <input
                         id="category"
@@ -119,12 +103,20 @@ export default function TaskForm(){
                         placeholder="Category"
                         required
                     />
+                    <label htmlFor="completed">Completed:</label>
+                    <input
+                        id="completed"
+                        type="checkbox"
+                        onChange={handleCheckboxChange}
+                        checked={list.completed }
+                    />
+
 
                     <div className="submitButton">
-                        <button type="submit" >Submit</button>
                         <Link to={`/grid`} className="newLink" style={{ margin: '0', padding: '0' }}>
                             <button>↩︎</button>
                         </Link>
+                        <button type="submit" >Submit</button>
                     </div>
                 </form>
             </div>

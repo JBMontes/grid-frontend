@@ -1,6 +1,8 @@
 import { useState, useEffect } from "react";
 import { useNavigate, useParams } from "react-router-dom";
 import { Link } from "react-router-dom";
+import '../styles/Detail.css'
+
 const API = import.meta.env.VITE_API_URL;
 
 export default function Detail() {
@@ -25,7 +27,7 @@ export default function Detail() {
             .catch((error) => console.error(error));
     }
 
-    
+    console.log(list)
     return (
         <div className="OuterDetail">
 
@@ -36,11 +38,12 @@ export default function Detail() {
                 <h3>Deadline: {list.deadline}</h3>
                 <h3>Completed: {list.completed ? "✅" : "❌"}</h3>
                 <h3> Category: {list.category}</h3>
-            </div>
             <div className="buttons">
                 <button onClick={handleDelete}>Delete</button>
                <Link to='/grid'> <button>↩︎</button></Link>
+               
                <Link to={`/grid/${id}/edit`}><button>Edit</button></Link>
+            </div>
             </div>
 
 

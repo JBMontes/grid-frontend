@@ -69,8 +69,8 @@
   color: white;
   padding: 15px;
     /* background-image:url(/public/photo-1684057871822-d9354b8f04a7.avif); */
-    /* background-image:url(/public/num\ 9.avif); */
-    background-image:url(/num\ 11.avif);
+    background-image:url(/photo-1684057871822-d9354b8f04a7.avif);
+  
     background-size: cover;
     /* animation: imageShift 20s infinite linear; */
     /* animation: imageShift 1 2s; 
@@ -84,9 +84,9 @@
     justify-content: space-evenly;
     align-items:center;
     gap: 30px;
-    /* position:relative;
-    left: -100px;
-    top: 300px; */
+    position:relative;
+    left: -20px;
+    /* top: 300px; */
 
 
   }

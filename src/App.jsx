@@ -6,10 +6,10 @@ import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import NavBar from './components/NavBar';
 import Home from './pages/Home';
 import ShowAll from './components/ShowAll';
-// import Grid from './components/Grid';
 import Detail from './components/Detail';
 import TaskForm from './components/TaskForm';
 import Edit from './components/Edit';
+
 function App() {
   
 
@@ -22,7 +22,6 @@ function App() {
 <Routes>
 <Route path="/" element={<Home />} />
 <Route path="/grid" element={<ShowAll />} />
-{/* <Route path='/grid/grid' element={<Grid />} /> */}
 <Route path='/grid/:id' element={<Detail />} />
 <Route path='/grid/new' element={<TaskForm />} />
 <Route path='/grid/:id/edit' element={<Edit />} />
