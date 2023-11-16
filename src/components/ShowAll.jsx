@@ -1,17 +1,17 @@
 import { useEffect, useState } from "react";
 import TaskCard from "./TaskCard";
-import Grid from "./Grid";
+// import Grid from "./Grid";
 import '../styles/ShowAll.css'
 
-import Priority1 from "./PriorityOne";
-import Priority2 from "./PriorityTwo";
-import Priority3 from "./PriorityThree";
-import Priority4 from "./PriortyFour";
+// import Priority1 from "./PriorityOne";
+// import Priority2 from "./PriorityTwo";
+// import Priority3 from "./PriorityThree";
+// import Priority4 from "./PriortyFour";
 
 export default function ShowAll(){
 
     let [list, setList] = useState([])
-const API = import.meta.env.VITE_API_URL;
+    const API = import.meta.env.VITE_API_URL;
 
 useEffect(() => {
     fetch(`${API}/grid`)
@@ -20,23 +20,19 @@ useEffect(() => {
         .catch((error) => console.error(error));
 });
 
+
+
+
     return(
         <div className="showAll">
 
             <div className="list">
-        {list.map((task)=> {
 
-            return (
-            <>
+        { list.map((task)=> 
+
             <TaskCard key={task.id} task={task}/>
-            <Priority1 task={task} />
-            <Priority2 task={task} />
-            <Priority3 task={task}/>
-            <Priority4 task={task}/>
-                    
-            </>
-            )
-        })}
+        
+        )}
 
             </div>
 
