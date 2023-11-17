@@ -26,8 +26,12 @@ export default function Detail() {
             })
             .catch((error) => console.error(error));
     }
-
-    console.log(list)
+    let arr = []
+    let dead = list.deadline
+    arr.push(dead)
+    console.log(arr)
+    
+    
     return (
         <div className="OuterDetail">
 
@@ -35,7 +39,7 @@ export default function Detail() {
                 <h3>Title: {list.title}</h3>
                 <h3>Priority Level: {list.priority}</h3>
                 <h3>Description: {list.description}</h3>
-                <h3>Deadline: {list.deadline}</h3>
+                <h3>Deadline: {list.deadline }</h3>
                 <h3>Completed: {list.completed ? "✅" : "❌"}</h3>
                 <h3> Category: {list.category}</h3>
             <div className="buttons">
