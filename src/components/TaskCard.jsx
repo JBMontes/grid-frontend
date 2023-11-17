@@ -8,7 +8,7 @@ export default function TaskCard({task}){
     return(
         <div className="taskCard">
         
-        <Link to={`/grid/${task.id}`}><h2>Title: {task.title}</h2></Link>
+        <Link to={`/grid/${task.id}`}><h2 className='title'>Title: {task.title}</h2></Link>
         <h2>Priority Level: {task.priority}</h2>
         <h2>Deadline: {arr}</h2>
         <h2>Complete: {task.completed ? "✅" : "❌"}</h2>

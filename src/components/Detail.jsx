@@ -26,15 +26,10 @@ export default function Detail() {
             })
             .catch((error) => console.error(error));
     }
-    let arr = []
-    let dead = list.deadline
-    arr.push(dead)
-    console.log(arr)
-    
     
     return (
         <div className="OuterDetail">
-
+            
             <div className="detail">
                 <h3>Title: {list.title}</h3>
                 <h3>Priority Level: {list.priority}</h3>

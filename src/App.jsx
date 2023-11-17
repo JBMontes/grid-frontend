@@ -9,6 +9,7 @@ import ShowAll from './components/ShowAll';
 import Detail from './components/Detail';
 import TaskForm from './components/TaskForm';
 import Edit from './components/Edit';
+import About from './pages/About';
 
 function App() {
   
@@ -25,6 +26,7 @@ function App() {
 <Route path='/grid/:id' element={<Detail />} />
 <Route path='/grid/new' element={<TaskForm />} />
 <Route path='/grid/:id/edit' element={<Edit />} />
+<Route path='/grid/about' element={<About />}/>
 
 
 </Routes>

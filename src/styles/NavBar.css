@@ -31,3 +31,30 @@ h1:hover{
     background-color: black;
     color: chocolate;
 }
+
+.navBar h2{
+    animation: card-spin infinite 3s linear;
+    border: 2px solid black;
+    background-color: burlywood;
+    border-radius: 45px;
+    position:relative;
+    left: -40px;
+    font-family: 'Noto Color Emoji', sans-serif;
+    padding: 3px;
+
+}
+
+.navBar h2:hover{
+    animation:none;
+    background-color: chocolate;
+}
+@keyframes card-spin {
+    from {
+      transform: none;
+    }
+    to {
+      transform: rotateY(360deg);
+     
+    }
+
+  }

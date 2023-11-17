@@ -20,7 +20,7 @@ useEffect(() => {
 
     return(
         <div className="showAll">
-
+            <h1>All Tasks</h1>
             <div className="list">
 
         { list.sort((a,b)=> b.priority - a.priority )

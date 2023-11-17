@@ -1,0 +1,71 @@
+.about {
+    background-image: url(/matrix.avif);
+    background-size:cover;
+    position: fixed;
+    top: 90px;
+    left: 0px;
+    width: 100%;
+    height: 100%;
+  
+  }
+  
+  .profilePic{
+     width:200px;
+     height:200px;
+     border-radius:100%;
+  }
+  
+  .github{
+      width:100px;
+      height:100px;
+  }
+  
+  .github:hover{
+     background-color: chocolate;
+     border-radius: 100%;
+  }
+  .profileCard{
+      display:flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items:center;
+      border: 3px solid black;
+      width: 400px;
+      padding-bottom: 40px;
+      padding-top: 10px;
+      border-radius:15%;
+      background-color: rgba(255, 228, 196, 0.568);
+      animation-name: thinAir;
+      animation-duration:3s;
+      
+  
+  }
+  
+  .profileList{
+      display:flex;
+      flex-direction: row;
+      justify-content: space-around;
+      align-items:start;
+      padding-top: 10px;
+      
+  }
+  
+  .profileCard h3{
+      color:black;
+      
+  }
+  
+  .about h3{
+      color: saddlebrown
+  }
+  
+  @keyframes thinAir {
+      from{
+          position:relative;
+          top:900px
+      }
+      to{
+          position:relative;
+          top:0px
+      }
+  }

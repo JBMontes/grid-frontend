@@ -1,6 +1,6 @@
 import { useState, useEffect } from "react";
 import { useNavigate, Link, useParams } from "react-router-dom";
-// import "../styles/Edit.css";
+import "../styles/Edit.css";
 
 const API = import.meta.env.VITE_API_URL;
 
