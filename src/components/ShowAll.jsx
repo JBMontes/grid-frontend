@@ -3,34 +3,34 @@ import TaskCard from "./TaskCard";
 // import Grid from "./Grid";
 import '../styles/ShowAll.css'
 
-export default function ShowAll(){
+export default function ShowAll() {
 
     let [list, setList] = useState([])
     const API = import.meta.env.VITE_API_URL;
 
-useEffect(() => {
-    fetch(`${API}/grid`)
-        .then((response) => response.json())
-        .then((responseJSON) => setList(responseJSON))
-        .catch((error) => console.error(error));
-},[API]);
+    useEffect(() => {
+        fetch(`${API}/grid`)
+            .then((response) => response.json())
+            .then((responseJSON) => setList(responseJSON))
+            .catch((error) => console.error(error));
+    }, [API]);
 
 
 
 
-    return(
+    return (
         <div className="showAll">
             <h1>All Tasks</h1>
             <div className="list">
 
-        { list.sort((a,b)=> b.priority - a.priority )
-        .map((task)=> 
-        <div key={task.id}
-        className={`task-card priority-${task.priority}`}
-        >
-            <TaskCard  task={task}/>
-        </div>
-        )}
+                {list.sort((a, b) => b.priority - a.priority)
+                    .map((task) =>
+                        <div key={task.id}
+                            className={`task-card priority-${task.priority}`}
+                        >
+                            <TaskCard task={task} />
+                        </div>
+                    )}
 
             </div>
 

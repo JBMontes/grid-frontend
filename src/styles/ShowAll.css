@@ -1,115 +1,102 @@
-.showAll{
-    background-image:url(/photo-1586075010923-2dd4570fb338.avif);
-    background-size: cover;
-    position:fixed;
-    top: 90px;
-    left: 0px;
-    width: 100%;
-    height: 89%;
-    display:flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
+.showAll {
+  background-image: url(/photo-1586075010923-2dd4570fb338.avif);
+  background-size: cover;
+  position: fixed;
+  top: 90px;
+  left: 0px;
+  width: 100%;
+  height: 89%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
 }
 
-.list{
-    width: 100%;
-    height:100%;
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: space-around;
-    align-items: center;
-    
- 
-    /* padding: 50px; */
-    /* border: 5px solid black; */
-    
-   
+.list {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+
+  /* padding: 50px; */
+  /* border: 5px solid black; */
 }
 
-.priority-1{
-    background-color: rgba(13, 164, 13, 0.32);
-    border: 3px solid black;
-    padding: 5px;
+.priority-1 {
+  background-color: rgba(13, 164, 13, 0.32);
+  border: 3px solid black;
+  padding: 5px;
 
-    animation-name: card-spin;
-    animation-duration: 1s;
-    /* animation-delay: 4s; */
+  animation-name: card-spin;
+  animation-duration: 1s;
+  /* animation-delay: 4s; */
 }
 
-.priority-2{
-    background-color: rgba(255, 255, 3, 0.299);
-    border: 3px solid black;
-    padding: 5px;
+.priority-2 {
+  background-color: rgba(255, 255, 3, 0.299);
+  border: 3px solid black;
+  padding: 5px;
 
-    animation-name: card-spin;
-    animation-duration: 1s;
-    /* animation-delay: 2s; */
+  animation-name: card-spin;
+  animation-duration: 1s;
+  /* animation-delay: 2s; */
 }
 
-.priority-3{
-    background-color: rgba(201, 98, 2, 0.412);
-    border: 3px solid black;
-    padding: 5px;
+.priority-3 {
+  background-color: rgba(201, 98, 2, 0.412);
+  border: 3px solid black;
+  padding: 5px;
 
-    animation-name: card-spin;
-    animation-duration: 1s;
-    /* animation-delay: s; */
-
+  animation-name: card-spin;
+  animation-duration: 1s;
+  /* animation-delay: s; */
 }
 
-.priority-4{
-    background-color: rgba(236, 8, 8, 0.288);
-    border: 3px solid black;
-    padding: 5px;
+.priority-4 {
+  background-color: rgba(236, 8, 8, 0.288);
+  border: 3px solid black;
+  padding: 5px;
 
-    animation-name: card-spin;
-    animation-duration: 1s;
-    /* animation-delay: .2s; */
+  animation-name: card-spin;
+  animation-duration: 1s;
+  /* animation-delay: .2s; */
 }
 
-.priority-1:hover{
-
-    background-color: rgb(116, 99, 78);
-    color: black;
+.priority-1:hover {
+  background-color: rgb(116, 99, 78);
+  color: black;
 }
 
-.priority-2:hover{
-
-
-    background-color: rgb(116, 99, 78);
-    color: black;
+.priority-2:hover {
+  background-color: rgb(116, 99, 78);
+  color: black;
 }
 
-.priority-3:hover{
-
- 
-    background-color: rgb(116, 99, 78);
-    color: black;
+.priority-3:hover {
+  background-color: rgb(116, 99, 78);
+  color: black;
 }
 
-.priority-4:hover{
-
-
-    background-color: rgb(116, 99, 78);
-    color: black;
+.priority-4:hover {
+  background-color: rgb(116, 99, 78);
+  color: black;
 }
 @keyframes card-spin {
-    from {
-      transform: none;
-    }
-    to {
-      transform: rotateY(360deg);
-     
-    }
-
+  from {
+    transform: none;
   }
-
-.title{
-    color: black;
+  to {
+    transform: rotateY(360deg);
+  }
 }
 
-.title:hover{
-    color: chocolate;
+.title {
+  color: black;
+}
+
+.title:hover {
+  color: chocolate;
 }

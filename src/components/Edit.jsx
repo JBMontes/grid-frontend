@@ -26,7 +26,7 @@ export default function Edit() {
     }, [id, navigate]);
 
     const update = () => {
-   
+
         fetch(`${API}/grid/${id}`, {
             method: "PUT",
             body: JSON.stringify(list),
@@ -58,7 +58,7 @@ export default function Edit() {
         <div className="edit">
             <div className="formBody">
                 <form onSubmit={handleSubmit} className="editForm">
-                <label htmlFor="title">Title:</label>
+                    <label htmlFor="title">Title:</label>
                     <input
                         id="title"
                         value={list.title}
@@ -106,7 +106,7 @@ export default function Edit() {
                         id="completed"
                         type="checkbox"
                         onChange={handleCheckboxChange}
-                        checked={list.completed }
+                        checked={list.completed}
                     />
 
                     <label htmlFor="category">Category:</label>

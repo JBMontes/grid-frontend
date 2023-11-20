@@ -1,6 +1,5 @@
 import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
+
 import './App.css'
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import NavBar from './components/NavBar';
@@ -12,7 +11,6 @@ import Edit from './components/Edit';
 import About from './pages/About';
 
 function App() {
-  
 
   return (
     <>
@@ -28,9 +26,7 @@ function App() {
 <Route path='/grid/:id/edit' element={<Edit />} />
 <Route path='/grid/about' element={<About />}/>
 
-
 </Routes>
-
 
    </Router>
     </>

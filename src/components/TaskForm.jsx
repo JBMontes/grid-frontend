@@ -3,7 +3,7 @@ import { useNavigate, Link } from "react-router-dom";
 import '../styles/TaskForm.css'
 const API = import.meta.env.VITE_API_URL;
 
-export default function TaskForm(){
+export default function TaskForm() {
 
     const navigate = useNavigate();
 
@@ -15,7 +15,7 @@ export default function TaskForm(){
         deadline: "",
         completed: false,
         category: "",
-       
+
     })
 
     const addList = () => {
@@ -38,7 +38,7 @@ export default function TaskForm(){
     };
 
     const handleCheckboxChange = () => {
-        setList({ ...list, completed:!list.completed });
+        setList({ ...list, completed: !list.completed });
     };
 
     const handleSubmit = (event) => {
@@ -108,7 +108,7 @@ export default function TaskForm(){
                         id="completed"
                         type="checkbox"
                         onChange={handleCheckboxChange}
-                        checked={list.completed }
+                        checked={list.completed}
                     />
 
 

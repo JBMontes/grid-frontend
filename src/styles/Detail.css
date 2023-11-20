@@ -21,14 +21,12 @@
 }
 
 .buttons {
-
   color: bisque;
-    display: flex;
-    justify-content: space-around;
+  display: flex;
+  justify-content: space-around;
 }
 
-.buttons button:hover{
-
-  background-color:chocolate;
-  color:black;
+.buttons button:hover {
+  background-color: chocolate;
+  color: black;
 }

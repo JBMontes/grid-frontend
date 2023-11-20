@@ -6,7 +6,6 @@ export default function AboutCard({ engineers }) {
 
     return (
         <>
-
             <div className="profileCard">
 
                 <h3>{engineers.name}</h3>
@@ -16,7 +15,6 @@ export default function AboutCard({ engineers }) {
                     <img className="github" src={github} />
                 </a>
             </div>
-
         </>
     )
 }
