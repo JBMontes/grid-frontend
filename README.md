@@ -1,8 +1,10 @@
-# React + Vite
+# Welcome to the Grid
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+This task management app allows you to keep track of those important tasks. To access the app, visit "https://grid-ny.netlify.app/". On the Home Page, click the 'View All' button to see what you have in store for the days to come or the 'New Task' button to keep track of stored tasked.
 
-Currently, two official plugins are available:
+Users have the option to edit their tasks by clicking on the title of any card created. If the user is not satisfied or done with a task, they can simply press the delete button to get rid of it. 
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+To view the backend, click the link 'https://grid-backend-wr5q.onrender.com'. 
+
+To check out the creator of the project, click on the '🧔🏿‍♂️' emoji at the middle of the navigation bar. 
+
